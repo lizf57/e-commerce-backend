@@ -3,9 +3,9 @@
 ## Description
 The purpose of this application was to create a functioning back end server using Sequelize to interact with a MySQL database for an e-commerce site. The application's front end functions through an Express.js API. 
 
-Watch a walkthrough [video]( put link here ) demonstrating the functionality of the application and its tests.
+Watch [walkthrough-videos](#usage) under Usage section demonstrating the functionality of the application and its tests (just click the blue text).
 
-![screenshot](photo path here)
+![screenshot](/assets/images/screenshot.png)
 
 ## Table of Contents
   * [Installation](#installation)
@@ -13,13 +13,33 @@ Watch a walkthrough [video]( put link here ) demonstrating the functionality of 
   * [License](#license)
   * [Badges](#badges)
   * [Contributions](#contributions)
-  * [Tests](#tests)
   * [Questions](#questions)
 
 ## [Installation](#Table-of-Contents)
+1. Download or Clone this repository.
+
+2. In the command line, run `npm install` to install dependencies.
+
+3. Create an `.env` file in the root of the directory to create your own confidental username and password. [Env-Setup](https://www.npmjs.com/package/dotenv)
+
 
 ## [Usage](#table-of-contents)
-To invoke the application, type `node index.js` on the command line. 
+1. After you install the application, login into MySQL on the command line `mysql -u root -p` and then enter your password.
+
+2. On the command line, run `SOURCE db/schema.sql;` then `exit`
+
+3. On the command line, run `npm run seed` to run your seed files. 
+
+4. To invoke the application, type `npm run watch` on the command line.
+
+Walkthrough videos:
+
+1. [The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia Core.](https://drive.google.com/file/d/1jE2FGCt9pHXph_RQkf8oZJx4rXMhVbjC/view?usp=drive_link) 
+
+2. [The second animation shows GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core.](https://drive.google.com/file/d/1agT7dk0V8vVsiZszL5TafJSdbkeyqBGL/view?usp=drive_link)
+
+3. [The final animation shows the POST, PUT, and DELETE routes for categories being tested in Insomnia Core.](https://drive.google.com/file/d/1xkci5WwAgyM-tqVDl2bE6EtXf3gqoggL/view?usp=drive_link)
+
 
 ## [License](#table-of-contents)
 [MIT License](https://opensource.org/licenses/MIT)
@@ -33,9 +53,6 @@ To invoke the application, type `node index.js` on the command line.
 
 ## [Contributions](#table-of-contents)
 There were no other developers contributing to this application. The project was initiated as a challenge assignment from the University of Wisconsin Coding Bootcamp. The University provided a working Express.js front end starter code. 
-
-## [Tests](#table-of-contents)
-
 
 ## [Questions](#Table-of-Contents)
 If you have any questions contact me here:
